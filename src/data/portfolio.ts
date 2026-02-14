@@ -2,7 +2,7 @@ export const personalInfo = {
   name: "Alex Chen",
   title: "AI/ML Engineer & Data Scientist",
   tagline: "Transforming complex data into intelligent solutions that drive real-world impact.",
-  photo: "/profile.jpg", 
+  photo: "/ai-portfolio-builder/profile.jpg",
   email: "alex.chen@example.com",
   location: "San Francisco, CA",
   about:
