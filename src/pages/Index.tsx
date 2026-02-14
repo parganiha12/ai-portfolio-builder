@@ -57,13 +57,13 @@ const Index = () => {
       <FadeIn delay={0.15} className="flex-shrink-0">
   <div className="relative">
     <div className="absolute inset-0 bg-primary/20 blur-2xl scale-110 rounded-2xl" />
-    <div className="relative w-56 h-64 md:w-72 md:h-80 rounded-2xl overflow-hidden border-4 border-primary/30 shadow-2xl">
-      <img
-        src={personalInfo.photo}
-        alt={personalInfo.name}
-        className="w-full h-full object-cover object-top"
-      />
-    </div>
+    <div className="relative w-48 h-72 md:w-60 md:h-96 rounded-2xl overflow-hidden border-4 border-primary/30 shadow-2xl">
+  <img
+    src={personalInfo.photo}
+    alt={personalInfo.name}
+    className="w-full h-full object-cover object-top"
+  />
+</div>
   </div>
 </FadeIn>
 
