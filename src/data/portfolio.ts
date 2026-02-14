@@ -56,18 +56,25 @@ export interface Education {
 
 export const education = [
   {
-    degree: "Master of Technology in Computer Science & Engineering (AI/ML)",
+    degree: "M.Tech in Computer Science & Engineering (AI/ML)",
     school: "IIIT Naya Raipur",
     period: "Aug 2025 — Aug 2027",
-    details: "CGPA: 8.09/10.0",
+    details: "Specialization: AI/ML",
   },
   {
-    degree: "Bachelor of Technology in Computer Science & Engineering",
-    school: "Shri Shankaracharya Technical Campus Bhilai",
+    degree: "B.Tech in Computer Science & Engineering",
+    school: "Shri Shankaracharya Technical Campus",
     period: "Aug 2019 — Aug 2023",
-    details: "CGPA: 8.22/10.0",
+    details: "CGPA: 8.22/10",
+  },
+  {
+    degree: "Higher Secondary (Class 12) — Science (Mathematics)",
+    school: "Shakuntala Vidyalaya",
+    period: "Mar 2017 — Mar 2018",
+    details: "Percentage: 88.8%",
   },
 ];
+
 
 
 export const skillCategories = [
