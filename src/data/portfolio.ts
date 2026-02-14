@@ -1,23 +1,24 @@
 export const personalInfo = {
-  name: "Alex Chen",
-  title: "AI/ML Engineer & Data Scientist",
-  tagline: "Transforming complex data into intelligent solutions that drive real-world impact.",
+  name: "Aman Parganiha",
+  title: "AI & Software Engineer",
+  tagline: "Building AI systems and scalable software that solve real-world problems.",
   photo: "/ai-portfolio-builder/profile.jpg",
-  email: "alex.chen@example.com",
-  location: "San Francisco, CA",
+  email: "aman25300@iiitnr.edu.in",
+  location: "India",
   about:
-    "I'm a passionate AI/ML engineer and data scientist with 5+ years of experience building and deploying machine learning models at scale. I specialize in NLP, computer vision, and predictive analytics, and I love turning messy data into actionable insights. Currently focused on large language models and responsible AI.",
-  stats: [
-    { label: "Years in ML", value: "5+" },
-    { label: "Models Deployed", value: "20+" },
-    { label: "Publications", value: "8" },
-    { label: "Open Source Projects", value: "12" },
+    "I'm an M.Tech CSE (AI/ML) student at IIIT Naya Raipur with strong foundations in Data Structures, Algorithms, and Software Systems. I build scalable AI applications including Retrieval-Augmented Generation (RAG) pipelines and multimodal machine learning systems. My focus is on clean software architecture and production-ready AI solutions.",
+
+stats: [
+    { label: "Projects Built", value: "10+" },
+    { label: "LeetCode Problems", value: "200+" },
+    { label: "Current CGPA", value: "8.09/10" },
+    { label: "Specialization", value: "AI/ML" },
   ],
   social: {
-    github: "https://github.com",
-    linkedin: "https://linkedin.com",
-    kaggle: "https://kaggle.com",
-    twitter: "https://twitter.com",
+    github: "https://github.com/amanparganiha",
+    linkedin: "https://www.linkedin.com/in/aman-parganiha-3397a5190/",
+    leetcode: "https://leetcode.com/u/parganiha/",
+    kaggle: "https://www.kaggle.com/amanparganiha",
   },
 };
 
@@ -29,40 +30,22 @@ export interface Experience {
   highlights: string[];
 }
 
-export const experiences: Experience[] = [
+export const experiences = [
   {
-    role: "Senior ML Engineer",
-    company: "TechCorp AI",
-    period: "2022 — Present",
-    description: "Leading ML infrastructure and model development for production NLP systems.",
+    role: "M.Tech CSE (AI/ML)",
+    company: "IIIT Naya Raipur",
+    period: "2025 — Present",
+    description:
+      "Focused on AI/ML systems, scalable software engineering, and advanced computer science concepts.",
     highlights: [
-      "Built a real-time NLP pipeline processing 10M+ documents daily",
-      "Reduced model inference latency by 40% through optimization",
-      "Mentored a team of 4 junior engineers",
-    ],
-  },
-  {
-    role: "Data Scientist",
-    company: "DataFlow Inc.",
-    period: "2020 — 2022",
-    description: "Developed predictive models and data pipelines for enterprise clients.",
-    highlights: [
-      "Designed a churn prediction model improving retention by 25%",
-      "Automated ETL pipelines reducing processing time by 60%",
-      "Presented findings to C-suite stakeholders",
-    ],
-  },
-  {
-    role: "ML Research Intern",
-    company: "University AI Lab",
-    period: "2019 — 2020",
-    description: "Conducted research on transfer learning for low-resource NLP tasks.",
-    highlights: [
-      "Published 2 papers at top-tier conferences (ACL, EMNLP)",
-      "Developed a novel data augmentation technique",
+      "Built scalable RAG pipelines for document retrieval",
+      "Worked on multimodal machine learning systems",
+      "Applied clean architecture and modular design principles",
     ],
   },
 ];
+
+
 
 export interface Education {
   degree: string;
@@ -71,49 +54,76 @@ export interface Education {
   details?: string;
 }
 
-export const education: Education[] = [
+export const education = [
   {
-    degree: "M.S. Computer Science (ML Specialization)",
-    school: "Stanford University",
-    period: "2018 — 2020",
-    details: "GPA: 3.9/4.0 | Thesis: Transfer Learning for Low-Resource NLP",
+    degree: "Master of Technology in Computer Science & Engineering (AI/ML)",
+    school: "IIIT Naya Raipur",
+    period: "Aug 2025 — Aug 2027",
+    details: "CGPA: 8.09/10.0",
   },
   {
-    degree: "B.S. Mathematics & Statistics",
-    school: "UC Berkeley",
-    period: "2014 — 2018",
-    details: "Summa Cum Laude | Minor in Computer Science",
+    degree: "Bachelor of Technology in Computer Science & Engineering",
+    school: "Shri Shankaracharya Technical Campus Bhilai",
+    period: "Aug 2019 — Aug 2023",
+    details: "CGPA: 8.22/10.0",
   },
 ];
+
 
 export const skillCategories = [
   {
-    category: "ML / Deep Learning",
-    skills: ["PyTorch", "TensorFlow", "Scikit-learn", "Hugging Face", "JAX", "XGBoost"],
+    category: "Programming Languages",
+    skills: ["C++", "Python", "SQL"],
   },
   {
-    category: "NLP",
-    skills: ["Transformers", "spaCy", "NLTK", "LangChain", "RAG", "Fine-tuning LLMs"],
+    category: "Machine Learning & AI",
+    skills: [
+      "PyTorch",
+      "TensorFlow",
+      "Scikit-learn",
+      "NLP",
+      "Deep Learning",
+      "Model Evaluation",
+    ],
   },
   {
-    category: "Data & Analytics",
-    skills: ["Pandas", "NumPy", "SQL", "Spark", "Airflow", "dbt"],
+    category: "Data Engineering & Tools",
+    skills: [
+      "Pandas",
+      "NumPy",
+      "Git",
+      "Linux",
+      "AWS",
+      "ETL Pipelines",
+    ],
   },
   {
-    category: "Languages",
-    skills: ["Python", "R", "TypeScript", "SQL", "Julia"],
+    category: "Core Computer Science",
+    skills: [
+      "DSA",
+      "Operating Systems",
+      "DBMS",
+      "Computer Networks",
+      "OOP",
+    ],
   },
   {
-    category: "Cloud & MLOps",
-    skills: ["AWS SageMaker", "GCP Vertex AI", "Docker", "Kubernetes", "MLflow", "Weights & Biases"],
+    category: "Software Engineering",
+    skills: [
+      "Scalable Systems",
+      "Design Patterns",
+      "Clean Code",
+      "Debugging",
+    ],
   },
 ];
 
+
 export const certifications = [
-  "AWS Certified Machine Learning — Specialty",
-  "Google Professional Machine Learning Engineer",
-  "Deep Learning Specialization (Coursera)",
+  "Google × Kaggle — 5-Day AI Agents Intensive Course",
+  "Walmart USA — Advanced Software Engineering Job Simulation",
 ];
+
 
 export interface Project {
   id: string;
@@ -128,75 +138,48 @@ export interface Project {
   demo?: string;
 }
 
-export const projects: Project[] = [
+export const projects = [
   {
     id: "1",
-    title: "Intelligent Document Summarizer",
-    description: "An LLM-powered tool that summarizes long documents with extractive and abstractive methods.",
+    title: "Event-Driven Retrieval-Augmented Generation Agent",
+    description:
+      "End-to-end RAG system for asynchronous document ingestion and semantic retrieval.",
     longDescription:
-      "Built a production-grade document summarization system using fine-tuned T5 and BART models. The system handles PDFs, Word docs, and web articles, producing concise summaries with configurable length and style. Deployed as a REST API with a React frontend.",
-    category: "NLP",
-    techStack: ["Python", "PyTorch", "Hugging Face", "FastAPI", "React"],
-    results: "Achieved 42 ROUGE-L score, 3x faster than GPT-4 at 1/10th the cost.",
-    github: "https://github.com",
+      "Architected a scalable RAG pipeline using Inngest workflows, Qdrant vector DB, and LlamaIndex. Integrated GPT-4o with context-aware prompting. Built FastAPI backend and Streamlit frontend, containerized with Docker.",
+    category: "Generative AI",
+    techStack: [
+      "Python",
+      "FastAPI",
+      "Qdrant",
+      "LlamaIndex",
+      "OpenAI API",
+      "Docker",
+    ],
+    results:
+      "Optimized chunking and embedding strategy to improve retrieval precision.",
+    github: "YOUR_GITHUB_LINK",
   },
   {
     id: "2",
-    title: "Real-Time Object Detection System",
-    description: "Edge-deployed computer vision model for manufacturing quality control.",
+    title: "Multimodal Credit Risk Analysis using SEC XBRL & NLP",
+    description:
+      "Multimodal ML pipeline combining financial and NLP features for credit risk analysis.",
     longDescription:
-      "Developed a YOLOv8-based defect detection system for a manufacturing client. The model runs on edge devices (NVIDIA Jetson) and detects 15+ defect types in real-time at 30 FPS. Includes an alert dashboard and automated reporting.",
-    category: "Computer Vision",
-    techStack: ["Python", "YOLOv8", "TensorRT", "OpenCV", "NVIDIA Jetson"],
-    results: "99.2% accuracy, reduced manual inspection time by 80%.",
-  },
-  {
-    id: "3",
-    title: "Customer Churn Predictor",
-    description: "End-to-end ML pipeline predicting customer churn for a SaaS platform.",
-    longDescription:
-      "Built a complete churn prediction system including feature engineering, model training (XGBoost + LightGBM ensemble), and deployment. Integrated with the client's CRM to trigger proactive retention campaigns.",
+      "Processed SEC XBRL filings and engineered financial ratios. Combined structured financial data with NLP-derived sentiment features to train binary and multiclass credit rating models.",
     category: "Data Analysis",
-    techStack: ["Python", "XGBoost", "LightGBM", "Airflow", "PostgreSQL"],
-    results: "Improved customer retention by 25%, saving $2M annually.",
-    github: "https://github.com",
-    demo: "https://example.com",
-  },
-  {
-    id: "4",
-    title: "ML Pipeline Orchestrator",
-    description: "Open-source framework for reproducible ML experiment tracking and deployment.",
-    longDescription:
-      "Created an open-source MLOps tool that simplifies experiment tracking, model versioning, and deployment. Supports multiple ML frameworks and cloud providers with a unified API.",
-    category: "MLOps",
-    techStack: ["Python", "Docker", "Kubernetes", "MLflow", "GitHub Actions"],
-    results: "500+ GitHub stars, adopted by 3 enterprise teams.",
-    github: "https://github.com",
-  },
-  {
-    id: "5",
-    title: "AI Art Style Transfer App",
-    description: "A generative AI application that applies artistic styles to photographs.",
-    longDescription:
-      "Built a neural style transfer application using a modified VGG-19 network. Users can upload photos and apply styles from famous paintings. Optimized for mobile with CoreML export.",
-    category: "Generative AI",
-    techStack: ["Python", "PyTorch", "CoreML", "Swift", "Flask"],
-    results: "10K+ downloads on the App Store, 4.7 star rating.",
-    demo: "https://example.com",
-  },
-  {
-    id: "6",
-    title: "Sentiment Analysis Dashboard",
-    description: "Real-time social media sentiment tracking for brand monitoring.",
-    longDescription:
-      "Developed a real-time sentiment analysis system that monitors Twitter, Reddit, and news sites. Uses a fine-tuned RoBERTa model with streaming data processing via Apache Kafka.",
-    category: "NLP",
-    techStack: ["Python", "RoBERTa", "Kafka", "Elasticsearch", "React"],
-    results: "Processes 50K+ posts/hour with 91% accuracy.",
-    github: "https://github.com",
-    demo: "https://example.com",
+    techStack: [
+      "Python",
+      "Pandas",
+      "Scikit-learn",
+      "NLP",
+      "Git",
+    ],
+    results:
+      "Built scalable multimodal dataset and evaluated multiple ML models.",
+    github: "YOUR_GITHUB_LINK",
   },
 ];
+
 
 export interface BlogPost {
   id: string;
