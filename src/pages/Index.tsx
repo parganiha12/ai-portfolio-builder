@@ -8,47 +8,53 @@ const Index = () => {
   return (
     <div>
       {/* Hero */}
-      <section className="relative overflow-hidden py-24 md:py-32">
-        <div className="absolute inset-0 -z-10">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-primary/5 blur-3xl" />
-          <div className="absolute bottom-1/4 right-1/4 w-72 h-72 rounded-full bg-primary/8 blur-3xl" />
-        </div>
-        <div className="mx-auto max-w-6xl px-6">
-          <FadeIn>
-            <p className="text-sm font-medium text-primary tracking-wide uppercase mb-4">
-              Welcome to my portfolio
-            </p>
-          </FadeIn>
-          <FadeIn delay={0.1}>
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-tight mb-6">
-              Hi, I'm{" "}
-              <span className="text-primary">{personalInfo.name}</span>
-            </h1>
-          </FadeIn>
-          <FadeIn delay={0.15}>
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mb-4">
-              {personalInfo.title}
-            </p>
-          </FadeIn>
-          <FadeIn delay={0.2}>
-            <p className="text-lg text-muted-foreground max-w-xl mb-8">
-              {personalInfo.tagline}
-            </p>
-          </FadeIn>
-          <FadeIn delay={0.25}>
-            <div className="flex flex-wrap gap-3">
-              <Button asChild size="lg">
-                <Link to="/projects">
-                  View Projects <ArrowRight className="ml-1" size={16} />
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="lg">
-                <Link to="/resume">My Resume</Link>
-              </Button>
-            </div>
-          </FadeIn>
-        </div>
-        <FadeIn delay={0.15} className="flex-shrink-0">
+<section className="relative overflow-hidden py-24 md:py-32">
+  <div className="absolute inset-0 -z-10">
+    <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-primary/5 blur-3xl" />
+    <div className="absolute bottom-1/4 right-1/4 w-72 h-72 rounded-full bg-primary/8 blur-3xl" />
+  </div>
+  <div className="mx-auto max-w-6xl px-6">
+    <div className="flex flex-col-reverse md:flex-row items-center gap-12 md:gap-16">
+
+      {/* Text Content */}
+      <div className="flex-1">
+        <FadeIn>
+          <p className="text-sm font-medium text-primary tracking-wide uppercase mb-4">
+            Welcome to my portfolio
+          </p>
+        </FadeIn>
+        <FadeIn delay={0.1}>
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-tight mb-6">
+            Hi, I'm{" "}
+            <span className="text-primary">{personalInfo.name}</span>
+          </h1>
+        </FadeIn>
+        <FadeIn delay={0.15}>
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mb-4">
+            {personalInfo.title}
+          </p>
+        </FadeIn>
+        <FadeIn delay={0.2}>
+          <p className="text-lg text-muted-foreground max-w-xl mb-8">
+            {personalInfo.tagline}
+          </p>
+        </FadeIn>
+        <FadeIn delay={0.25}>
+          <div className="flex flex-wrap gap-3">
+            <Button asChild size="lg">
+              <Link to="/projects">
+                View Projects <ArrowRight className="ml-1" size={16} />
+              </Link>
+            </Button>
+            <Button asChild variant="outline" size="lg">
+              <Link to="/resume">My Resume</Link>
+            </Button>
+          </div>
+        </FadeIn>
+      </div>
+
+      {/* Profile Photo */}
+      <FadeIn delay={0.15} className="flex-shrink-0">
         <div className="relative">
           {/* Glow ring behind photo */}
           <div className="absolute inset-0 rounded-full bg-primary/20 blur-2xl scale-110" />
@@ -69,7 +75,10 @@ const Index = () => {
           </div>
         </div>
       </FadeIn>
-      </section>
+
+    </div>
+  </div>
+</section>
 
       {/* Stats */}
       <section className="py-16 border-y border-border/50 bg-muted/30">
