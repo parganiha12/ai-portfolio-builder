@@ -55,26 +55,17 @@ const Index = () => {
 
       {/* Profile Photo */}
       <FadeIn delay={0.15} className="flex-shrink-0">
-        <div className="relative">
-          {/* Glow ring behind photo */}
-          <div className="absolute inset-0 rounded-full bg-primary/20 blur-2xl scale-110" />
-          <div className="relative w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl">
-            <img
-              src={personalInfo.photo}
-              alt={personalInfo.name}
-              className="w-full h-full object-cover"
-              onError={(e) => {
-                // Fallback to initials if image not found
-                e.currentTarget.style.display = "none";
-              }}
-            />
-            {/* Initials fallback (shown if image fails) */}
-            <div className="absolute inset-0 flex items-center justify-center bg-primary/10 text-primary text-5xl font-bold">
-              {personalInfo.name.split(" ").map(n => n[0]).join("")}
-            </div>
-          </div>
-        </div>
-      </FadeIn>
+  <div className="relative">
+    <div className="absolute inset-0 bg-primary/20 blur-2xl scale-110 rounded-2xl" />
+    <div className="relative w-56 h-64 md:w-72 md:h-80 rounded-2xl overflow-hidden border-4 border-primary/30 shadow-2xl">
+      <img
+        src={personalInfo.photo}
+        alt={personalInfo.name}
+        className="w-full h-full object-cover object-top"
+      />
+    </div>
+  </div>
+</FadeIn>
 
     </div>
   </div>
