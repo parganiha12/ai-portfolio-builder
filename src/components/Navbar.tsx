@@ -19,7 +19,7 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur-md">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link to="/" className="text-xl font-bold tracking-tight font-[Space_Grotesk]">
-          <span className="text-primary">A</span>C
+          <span className="text-primary">A</span>P
         </Link>
 
         {/* Desktop */}
