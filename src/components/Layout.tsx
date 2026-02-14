@@ -15,7 +15,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <main className="flex-1">{children}</main>
       <footer className="border-t border-border/50 py-8">
         <div className="mx-auto max-w-6xl px-6 text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Alex Chen. All rights reserved.
+          © {new Date().getFullYear()} Aman Parganiha. All rights reserved.
         </div>
       </footer>
     </div>
